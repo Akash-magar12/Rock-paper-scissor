@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    text-align: center;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.head {
+    font-size: 4vw;
+    text-decoration: underline;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 3vw;
+    background-color: #e3e1e1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    gap: 1vw;
+}
+
+.btns button {
+    cursor: pointer;
+    font-size: 4vw;
+    border: none;
+    background-color: rgb(80, 80, 233);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 1.5vw;
+}
+
+button:hover {
+    background-color: rgb(138, 138, 212);
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+#result {
+    font-size: 4vw;
+}
+
+#player,
+#computer {
+    font-size: 3vw;
+}
+
+#playerScore,
+#computerScore {
+    font-size: 3vw;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .head {
+        font-size: 9vw;
+        text-decoration: underline;
+    }
+
+    .container {
+
+        padding-top: 6vw;
+        gap: 5vw;
+        justify-content: start;
+    }
+
+    .btns {
+        gap: 2vw;
+    }
+
+    .btns button {
+        margin-top: 10vw;
+        font-size: 12vw;
+    }
+
+
+    #computer,
+    #player {
+        font-size: 8vw;
+        margin-bottom: 4vw;
+    }
+
+    #result {
+        font-size: 12vw;
+        margin-top: 2vw;
+    }
+
+    #playerScore,
+    #computerScore {
+        font-size: 8vw;
+    }
+
+}
